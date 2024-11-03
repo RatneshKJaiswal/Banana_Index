@@ -6,7 +6,7 @@
 
 Check the freshness of bananas in a snap! This web app uses a Deep learning model to predict the freshness index of a banana based on its image. Simply upload a photo of a banana, and the app will analyze the image and return a freshness index from 0 to 100, where 100 represents maximum freshness.
 
-### 🌐 [banana-index.onrender.com](https://banana-index.onrender.com/)
+### 🌐 [Try Here - banana-index.onrender.com](https://banana-index.onrender.com/)
 
 ## 📸 Features
 
