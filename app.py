@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, render_template, jsonify
 from PIL import Image
 import torch
@@ -73,5 +74,10 @@ def predict():
         print(freshness_index)
         return jsonify({"freshness_index": freshness_index})
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Use 0.0.0.0 and port from environment variable
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
